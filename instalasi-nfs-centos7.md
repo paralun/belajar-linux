@@ -39,6 +39,8 @@ Prepare
 ```
 <DIRECTORY> <IP CLIENT>(rw,sync,no_root_squash,no_all_squash)
 /nfs 192.168.133.7(rw,sync,no_root_squash,no_all_squash)
+/nfs 192.168.133.7(sync,wdelay,hide,no_subtree_check,sec=sys,rw,secure,no_root_squash,all_squash)
+/nfs *(ro,no_root_squash,async,no_subtree_check)
 
 # exportfs -a
 # exportfs -v 
